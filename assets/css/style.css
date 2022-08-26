@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    --color-gray: #7b7b7b;
+    --color-white: #fff;
+    --border-fb: rgb(70, 70, 245);
+    --border-twiter: rgb(107, 107, 238);
+    --border-youtube: rgb(179, 29, 29);
+    --color-text: rgb(19, 19, 19);
+    --color-statics-up: #44b403;
+    --color-statics-down: #f00;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.container-init{
+    padding: 3rem;
+    background: #dddddd6c;
+}
+
+.init{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+.init h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.init p{
+    color: #7b7b7b;
+}
+
+.information-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-component{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    margin: 1rem auto;
+    display: flex;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(68, 68, 68, 0.39);
+    border-top: 0.5rem solid rgb(70, 70, 245);
+    padding: 2rem 4rem;
+    background: #f0f0f0;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.card:nth-child(2){
+    border-top: 0.5rem solid var(--border-twiter);
+}
+
+.card:nth-child(3){
+    border-top: 0.5rem solid var(--border-youtube);
+}
+
+.card:nth-child(4){
+    border-top: 0.5rem solid rgb(204, 85, 17); 
+   
+}
+
+.card:hover{
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+.txt-card{
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-card h3{
+    font-size: 1rem;
+    color: #7b7b7b;
+}
+
+.card h1{
+    font-size: 3rem;
+}
+
+.card p{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.txt-icon{
+    color: var(--color-statics-up);
+}
+
+.today{
+    color: #7b7b7b;
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.information-today{
+    width: 100%;
+    height: 80vh;
+}
+
+.component-today{
+    margin: 2rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.card-overview{
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(68, 68, 68, 0.603);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    aspect-ratio: 4/1;
+    padding: 2.5rem;
+    border-radius: 0.4rem;
+    background: #f0f0f0;
+    transition: 0.2s all;
+}
+
+.card-overview:hover{
+    transition: 0.5s all;
+    transform: scale(1.1);
+}
+
+.card-today{
+    display: flex;
+    gap: 1.2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.card-today p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-gray);
+}
+
+.card-today h3{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.info-today{
+    display: flex;
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.static-today{
+    font-weight: bold;
+    color: var(--color-statics-up);
+}
+
+body.dark{
+    transition: 0.6s all;
+    color: #fff;
+    background:rgb(0, 0, 0);
+}
+
+.dark .container-init{
+    color: #fff;
+    background: rgb(20, 4, 49);
+}
+
+.dark .card{
+    transition: 0.4s all;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(1, 16, 102, 0.39);
+    background:rgb(0, 0, 54);
+    color: #fff;
+}
+
+.dark .card-overview{
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(1, 16, 102, 0.39);
+    background:rgb(0, 0, 54);
+    color: #fff;
+}
+
+.dark .today{
+    color: #fff;
+}
+.dark .card-today p{
+    color: #fff;
+}
